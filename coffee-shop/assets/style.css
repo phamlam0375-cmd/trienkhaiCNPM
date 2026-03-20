@@ -1,0 +1,200 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f8f9fa;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #3e2723;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 300px;
+    background: url('https://placehold.co/1200x400') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.price {
+    color: #6d4c41;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.btn {
+    background: #6d4c41;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #4e342e;
+}
+
+/* FORM */
+.form-box {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.form-box button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* LOGIN BACKGROUND */
+.auth-bg {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6d4c41, #3e2723);
+}
+
+/* FORM */
+.form-box {
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+.form-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+}
+
+.form-box input:focus {
+    border-color: #6d4c41;
+    outline: none;
+}
+
+/* BUTTON */
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    background: #6d4c41;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-box button:hover {
+    background: #4e342e;
+}
+
+/* LINK */
+.form-box a {
+    color: #6d4c41;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    height: 350px;
+    background: url('/coffee-shop/assets/images/trangchu1.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Lớp phủ làm chữ dễ đọc */
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Nội dung nằm trên overlay */
+.hero span {
+    position: relative;
+    z-index: 1;
+}
